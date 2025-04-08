@@ -11,15 +11,17 @@ nav {
     background-color: #fff; /* o el que uses */
     height: auto;
     box-shadow: #666 0 4px 8px;
-    height: 80px; /* o menos, según lo que te guste */
+    height: 100px; /* o menos, según lo que te guste */
     padding: 0 30px; /* quita padding vertical */
    
   }
   
   .logo img {
-    height: 100px; /* puedes cambiar este valor para escalar */
+    height: 200px; /* puedes cambiar este valor para escalar */
     width: auto;
     object-fit: contain;
+    margin-left: 700px;
+   
   }
   
   .portada .name-logo {
