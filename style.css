@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* o el que uses */
+    height: auto;
+    box-shadow: #666 0 4px 8px;
+    height: 80px; /* o menos, según lo que te guste */
+    padding: 0 30px; /* quita padding vertical */
+   
+  }
+  
+  .logo img {
+    height: 100px; /* puedes cambiar este valor para escalar */
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .portada .name-logo {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .enlaces a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: serif;
+  }
+  
+
+.enlaces a:hover {
+    color: #f39ac6;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.info {
+    margin-bottom: 20px;
+}
+.info h1 {
+    color: #f48ca7;
+}
+.info p {
+    color: #666;
+}
+/* Contenedor principal del carrusel */
+.swiper {
+    width: 100%;
+    max-width: 100%; /* Ajustar el ancho máximo */
+    height: 50vh; /* Un poco menos de la mitad de la página */
+    overflow: hidden; /* Oculta elementos fuera del área visible */
+    position: relative;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #ffe4e9, #fff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper de los slides */
+.swiper-wrapper {
+    display: flex; /* Alinea los elementos horizontalmente */
+    animation: scroll-infinite 20s linear infinite; /* Animación infinita para desplazamiento */
+}
+
+/* Cada slide dentro del carrusel */
+.swiper-slide {
+    flex: 0 0 80%; /* Cada slide ocupa el 100% del contenedor */
+    height: 50%; /* Ocupa toda la altura del carrusel */
+    display: flex; /* Asegura que los hijos (imágenes) se alineen correctamente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imágenes dentro de los slides */
+.swiper-slide img {
+    display: block;
+    width: 100%; /* La imagen ocupa todo el ancho del slide */
+    height: 20%; /* La imagen ocupa toda la altura del slide */
+    object-fit: cover; /* Recorta y ajusta la imagen sin deformarla */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover en las imágenes */
+.swiper-slide img:hover {
+    transform: scale(1.05);
+}
+
+/* Animación infinita */
+@keyframes scroll-infinite {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazarse completamente a la izquierda */
+    }
+}
+
+/* Responsivo: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .swiper {
+        height: 30vh; /* Reducir altura en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 25vh; /* Reducir altura en pantallas pequeñas */
+    }
+}
+.map img {
+    width: 90%;
+    margin-left: 5%;
+    border: #666 solid 1px;
+    border-radius: 10px;
+}
+.mapa {
+    padding: 20px;
+    
+
+}
+.Contenido{
+    background-color: white;
+}
+.Contenido h1{
+    text-align: center;
+    font-family:serif;
+    padding: 20px;
+    font-size: 50px;
+}
+.Contenido p {
+    text-align: justify;
+    font-size: 25px;
+    line-height: 1.8;
+    padding: 20px;
+
+}
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f48ca7;
+    color: white;               /* Texto blanco para mejor contraste */
+    border: none;               /* Sin borde */
+    padding: 10px 20px;         /* Espaciado interno */
+    border-radius: 8px;         /* Bordes redondeados */
+    font-size: 25px;            /* Tamaño del texto */
+    cursor: pointer;            /* Cambia el cursor al pasar */
+    transition: all 0.3s ease;  /* Animación suave para cambios */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  button:hover {
+    background-color: #e37395;   /* Color más fuerte al pasar el mouse */
+    transform: scale(1.05);      /* Ligeramente más grande al hacer hover */
+  }
+  
