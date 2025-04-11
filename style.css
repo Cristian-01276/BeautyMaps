@@ -31,7 +31,7 @@ nav {
   }
   
   .enlaces a {
-    margin-left: 40px;
+    margin-left: 60px;
     text-decoration: none;
     color: #333;
     font-weight: 700;
@@ -133,22 +133,31 @@ nav {
     
 
 }
-.Contenido{
-    background-color: white;
-}
-.Contenido h1{
+.Contenido {
+    padding: 60px 20px;
+    background-color: #fff;
     text-align: center;
-    font-family:serif;
-    padding: 20px;
-    font-size: 50px;
-}
-.Contenido p {
-    text-align: justify;
-    font-size: 25px;
+  }
+  
+  .Contenido h1 {
+    font-size: 2.5em;
+    color: #e249a2;
+    margin-bottom: 20px;
+  }
+  
+  .Contenido p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
     line-height: 1.8;
-    padding: 20px;
-
-}
+    color: #333;
+    background-color: #fadded;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(202, 59, 143, 0.05);
+    text-align: justify;
+  }
+  
 button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #f48ca7;
@@ -166,4 +175,174 @@ button {
     background-color: #e37395;   /* Color más fuerte al pasar el mouse */
     transform: scale(1.05);      /* Ligeramente más grande al hacer hover */
   }
+  /* Sección: Cómo Funciona */
+.como-funciona {
+    padding: 60px 5px;
+    background-color: #fdedf2;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .como-funciona .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .step {
+    background-color: #ffcde1;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(202, 59, 143, 0.1);
+  }
+  
+  /* Sección: Testimonios */
+  .testimonios {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .testimonios .testimonio {
+    background-color: #fff5fa;
+    border-left: 12px solid #ca3b8f;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .testimonios .testimonio strong {
+    display: block;
+    margin-top: 10px;
+    color: #b02d79;
+  }
+  
+  /* Sección: Registro */
+  .registro {
+    padding: 60px 20px;
+    background-color: #fef1f7;
+    text-align: center;
+  }
+  
+  .registro-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .registro-opciones > div {
+    background-color: white;
+    border: 2px solid #f7c7e1;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(202, 59, 143, 0.08);
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #f07cbf;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #b02d79;
+  }
+  
+  .btn-secondary {
+    background-color: #f07cbf;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e073ae;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .como-funciona .steps,
+    .registro-opciones {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /* Redes Sociales */
+.redes-sociales {
+    background-color: #fff0f6;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .redes-sociales h2 {
+    color: #ca3b8f;
+    margin-bottom: 20px;
+  }
+  
+  .iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 👈 Este valor controla el espacio entre íconos */
+    margin: 30px 0;
+  }
+  
+  .iconos-redes img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .iconos-redes img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Misión y Visión */
+  .mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fef1f7;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  
+  .mision-vision .bloque {
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(202, 59, 143, 0.08);
+  }
+  
+  .mision-vision h2 {
+    color: #b02d79;
+    margin-bottom: 10px;
+  }
+  
+  /* Centrado de Footer */
+  footer {
+    background-color: #fdfdfd;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    border: #666 ridge 1px;
+    box-shadow: #666 0 4px 8px;
+  }
+  
+  
   
