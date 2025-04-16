@@ -1,38 +1,4 @@
 body {
-<<<<<<< HEAD
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff; /* o el que uses */
-    height: auto;
-    box-shadow: #666 0 4px 8px;
-    height: 100px; /* o menos, según lo que te guste */
-    padding: 0 30px; /* quita padding vertical */
-   
-  }
-  
-  .logo img {
-    height: 200px; /* puedes cambiar este valor para escalar */
-    width: auto;
-    object-fit: contain;
-    margin-left: 700px;
-   
-  }
-  
-  .portada .name-logo {
-    height: 150px;
-    width: auto;
-    object-fit: contain;
-  }
-  
-  .enlaces a {
-=======
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -99,16 +65,12 @@ header{
   color: #333;
 }
 .enlaces a{
->>>>>>> 04e450d315f94683ba4bfb3b82a5e563e1f08310
     margin-left: 60px;
     text-decoration: none;
     color: #333;
     font-weight: 700;
     font-size: 20px;
     font-family: serif;
-<<<<<<< HEAD
-  }
-=======
 }
 .abrir-menu,
 .cerrar-menu{
@@ -124,21 +86,17 @@ header{
 .cerrar-menu{
   color: #1c1c1c;
 }
->>>>>>> 04e450d315f94683ba4bfb3b82a5e563e1f08310
   
 
 .enlaces a:hover {
     color: #f39ac6;
 }
 
-<<<<<<< HEAD
-=======
 .portada .name-logo {
   height: 150px;
   width: auto;
   object-fit: contain;
 }
->>>>>>> 04e450d315f94683ba4bfb3b82a5e563e1f08310
 .container {
     text-align: center;
     padding: 20px;
@@ -154,10 +112,7 @@ header{
 }
 /* Contenedor principal del carrusel */
 .swiper {
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> 04e450d315f94683ba4bfb3b82a5e563e1f08310
     width: 100%;
     max-width: 100%; /* Ajustar el ancho máximo */
     height: 50vh; /* Un poco menos de la mitad de la página */
@@ -167,10 +122,7 @@ header{
     background: linear-gradient(135deg, #ffe4e9, #fff);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
-=======
     z-index: 1;
->>>>>>> 04e450d315f94683ba4bfb3b82a5e563e1f08310
 }
 
 /* Wrapper de los slides */
